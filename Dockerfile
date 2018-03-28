@@ -3,7 +3,7 @@ FROM alpine:3.6
 MAINTAINER Josh Williams <vmizzle@gmail.com>
 
 ENV REFRESHED_AT=2017-11-13 \
-	ELIXIR_VERSION=1.5.1
+	ELIXIR_VERSION=1.6.0
 
 RUN apk --update add erlang && \
 	apk add --virtual build-dependencies wget ca-certificates && \
