@@ -13,6 +13,7 @@ RUN apk add --no-cache --virtual .elixir-build \
 	rm /tmp/v${ELIXIR_VERSION}.tar.gz && \
 	cd /tmp/elixir-${ELIXIR_VERSION} && \
 	make && DESTDIR=/opt/elixir make install && \
+	export PATH=$PATH:/opt/elixir/usr/local/bin && \
 	cd / && rm -rf /tmp/elixir-${ELIXIR_VERSION} && \
 	apk del --force .elixir-build
 
