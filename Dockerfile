@@ -1,9 +1,9 @@
-FROM jdubz/erlang:21.0.9
+FROM jdubz/erlang:22.3.4
 
 MAINTAINER Josh Williams <vmizzle@gmail.com>
 
-ENV REFRESHED_AT=2020-06-05 \
-	ELIXIR_VERSION=1.10.0
+ENV REFRESHED_AT=2020-06-08 \
+	ELIXIR_VERSION=1.10.3
 
 RUN apk add --no-cache --virtual .elixir-build \
 		build-base \
